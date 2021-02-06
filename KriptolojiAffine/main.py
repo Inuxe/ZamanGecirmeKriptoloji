@@ -5,7 +5,6 @@ def sifreleme(sifrelenecekMesaj, A, B):
     for i in range(len(sifrelenecekMesaj)):
         harf = (alfabeList.get(sifrelenecekMesaj[i]) * A) + B
         harf = harf % 29
-        #Dictionary valueden key almak
         sifreli_mesaj = sifreli_mesaj + str(list(alfabeList.keys())[list(alfabeList.values()).index(harf)])
     return sifreli_mesaj
 
